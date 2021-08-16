@@ -1,0 +1,519 @@
+:root {
+    --success-color: #04F5B5;
+    --error-color: #FF848B;
+    --attention-color: #FF9E5B;
+    --paragraph-color: #CCCCCC;
+    --white-color: #FFFFFF;
+    --black-color: #333333;
+    --grey-color: #F5F5F5;
+    --blue-light-color: #94B8FF;
+    --font-weight-bold: 550;
+    --font-weight-nornal: 500;
+    --line-height: 24px;
+    --bg-linear-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 14.03%, #FFFFFF 85.83%, rgba(255, 255, 255, 0) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.loading {
+    text-align: center;
+    margin: 12px auto;
+    color: var(--paragraph-color);
+}
+
+/* Container */
+.container {
+    margin: 13px auto;
+    width: 946px;
+}
+
+/* first row  */
+.container .row .finance-header {
+    background: linear-gradient(270deg, rgba(54, 88, 153, 0) 0%, rgb(54, 88, 153, 0.07) 100%);
+    border-radius: 8px;
+}
+
+.finance-header p.header-text {
+    color: var(--black-color);
+    padding: 9px 0 7px 19px;
+    font-weight: var(--font-weight-nornal);
+    font-size: 18px;
+    text-align: center;
+    opacity: 1;
+    z-index: 100;
+}
+
+.container .row .finance-content {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+    margin: 33px 155px 27px 0;
+}
+
+.finance-content .finance-logo {
+    width: 134px;
+}
+
+.finance-content .finance-logo .finance-fake-logo {
+    font-size: 22px;
+}
+
+.row .finance-content .finance-description {
+    width: 764px;
+    line-height: var(--line-height);
+    font-size: 15px;
+    color: #8B8B8B;
+}
+
+/* end of first */
+
+/* second row  : dashboard of finance*/
+
+.container .row.finance-dashboard {
+    background: linear-gradient(90.24deg, #4C566F 2.2%, #545D74 34.27%, #6D7383 53.51%, #494F61 84.52%, #2F3549 98.94%);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+/* zahalna dashboard */
+/* start */
+.row.finance-dashboard .col {
+    padding-top: 17px;
+}
+
+.container .title {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255, 0.1) 14.03%, rgb(255, 255, 255, 0.1) 85.83%, rgba(255, 255, 255, 0) 100%);
+    text-align: center;
+    color: var(--white-color);
+    padding: 6px;
+    Width: 448px;
+    margin: 0 auto 24px;
+}
+
+.finance-dashboard .col .zahalna-otsinka-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 86px;
+}
+
+.zahalna-otsinka-col {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.zahalna-otsinka-col p.zahalna-otsinka-col-title {
+    padding-bottom: 8px;
+}
+
+.zahalna-otsinka-col p.zahalna-otsinka-col-title {
+    font-weight: var(--font-weight-bold);
+    color: var(--white-color);
+}
+
+
+.zahalna-otsinka-col .otsinka-feedback-content {
+    background: linear-gradient(270deg, rgba(255, 132, 139, 0) 0%,
+            rgba(255, 132, 139, 0.2) 48.96%,
+            rgba(255, 132, 139, 0) 100%);
+    border-radius: 4px;
+    width: 133px;
+}
+
+.otsinka-feedback-content .otsinka-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.zahalna-otsinka-col .otsinka-feedback-content p {
+    color: var(--grey-color);
+    padding-bottom: 8px;
+}
+
+
+.effektvnist-content .otsinka-feedback-content {
+    background: linear-gradient(270deg,
+            rgba(4, 245, 181, 0) 0%, rgba(4, 245, 181, 0.15) 50%,
+            rgba(4, 245, 181, 0) 100%);
+    border-radius: 6px;
+}
+
+.zdorovia-content .otsinka-feedback-content {
+    background: linear-gradient(270deg,
+            rgba(255, 158, 91, 0) 0%,
+            rgba(255, 158, 91, 0.15) 51.56%,
+            rgba(255, 158, 91, 0) 100%);
+    border-radius: 6px;
+}
+
+.negatvna-otsinka {
+    color: var(--error-color);
+}
+
+.opstvn-otsinka {
+    color: var(--success-color);
+}
+
+.acceptable-otsinka {
+    color: var(--attention-color);
+}
+
+.otsinka-row .fas {
+    margin-right: 5px;
+}
+
+.finance-dashboard .separator-bar {
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(0deg, rgba(238, 238, 238, 0) 0%,
+            rgba(238, 238, 238, 0.57) 45.31%, rgba(238, 238, 238, 0) 100%);
+    border-radius: 30px;
+    margin-left: 25px;
+}
+
+.finance-dashboard .separator-bar.last-child-separator {
+    display: none;
+}
+
+/* end/
+/* detail paragraphe */
+
+.detail-paragraph {
+    padding: 40px 0 26px;
+    text-align: center;
+    color: var(--paragraph-color);
+}
+
+/* detail-container */
+.detail-container {
+    margin: auto 51px auto 35px;
+}
+
+.detail-container .detail-header-paragraph {
+    width: 818px;
+    margin: auto;
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.detail-otsinka-sum-container {
+    margin-top: 22px;
+    position: relative;
+}
+
+.detail-otsinka-sum-container .detail-otsinka-sum-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+}
+
+.detail-otsinka-sum-content .detail-otsinka,
+.detail-otsinka-sum-content .detail-suma {
+    margin: 0 14px;
+}
+
+.detail-otsinka-sum-content .detail-feedback {
+    color: var(--error-color);
+}
+
+.detail-metodolya {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--blue-light-color);
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
+}
+
+.detail-metodolya button {
+    all: unset;
+}
+
+.detail-container .detail-description {
+    width: 833px;
+    margin: 16px 0 27px 0;
+}
+
+.detail-description .type-title {
+    color: var(--white-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.detail-description .text-description {
+    color: var(--paragraph-color);
+}
+
+.detail-category-graphic-content {
+    display: grid;
+    grid-template-columns: 153px auto 372px;
+    column-gap: 18px;
+}
+
+.detail-category-graphic-container .category-container {
+    color: var(--white-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.detail-znachymist-otsinka-container .feedback-error-otsinka {
+    color: var(--error-color);
+    display: flex;
+    align-items: center;
+}
+
+.detail-znachymist-otsinka-container .feedback-acceptable-otsinka {
+    color: var(--attention-color);
+    display: flex;
+    align-items: center;
+}
+
+.detail-znachymist-otsinka-container .feedback-success-otsinka {
+    color: var(--success-color);
+    display: flex;
+    align-items: center;
+}
+
+.detail-znachymist-otsinka-container .fas {
+    margin-right: 9px;
+}
+
+.detail-znachymist-otsinka-description {
+    color: var(--white-color);
+}
+
+.znachymist-otsinka-znachena-container {
+    display: flex;
+    align-items: center;
+    color: var(--paragraph-color);
+}
+
+.znachymist-otsinka-znachena-container .znachymist-content {
+    margin-right: 5px;
+}
+
+.znachymist-otsinka-znachena-container .otsinka-content {
+    margin: 0 5px;
+}
+
+.znachymist-otsinka-znachena-container .znachena-content {
+    margin-left: 5px;
+}
+
+.znachymist-otsinka-znachena-container .znachymist-value {
+    color: var(--white-color);
+}
+
+.znachymist-otsinka-znachena-container .otsinka-value,
+.znachymist-otsinka-znachena-container .znachena-value {
+    color: var(--error-color);
+}
+
+.category-container .category-paragraph {
+    margin-right: 15px;
+}
+
+
+/* separator */
+.detail-bar-separator {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, rgba(238, 238, 238, 0) 0%,
+            rgba(238, 238, 238, 0.57) 45.31%, rgba(238, 238, 238, 0) 100%);
+    border-radius: 30px;
+    margin: 35px 0;
+}
+
+canvas {
+    max-width: 350px;
+}
+
+#graphic-container {
+    width: 100%;
+}
+
+
+/* Media query */
+
+@media (max-width : 700px) {
+    .container {
+        width: auto;
+    }
+
+    canvas {
+        max-width: 100% !important;
+    }
+
+    .container .finance-header {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .container .finance-header p.header-text {
+        text-align: left !important;
+    }
+
+    .container .finance-content {
+        display: flex !important;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        margin-top: 9px !important;
+        margin-bottom: 0 !important;
+        width: 100%;
+    }
+
+    .container .finance-content .finance-description {
+        width: 100% !important;
+        padding: 0 23px 8px 15px;
+    }
+
+    .finance-content .finance-logo {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        width: 100%;
+        column-gap: 5px;
+        padding: 0 23px 16px 15px;
+    }
+
+    /* end header */
+
+    .finance-dashboard {
+        width: 100% !important;
+    }
+
+
+    .zahalna-o-column .zahalna-otsinka-header {
+        width: 100% !important;
+    }
+
+    .zahalna-otsinka-content {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        margin: 0 auto !important;
+        row-gap: 20px;
+        position: relative;
+    }
+
+
+    .zahalna-otsinka-content .second-separator {
+        position: absolute;
+        top: 33%;
+        right: 31%;
+        transform: rotate(90deg);
+    }
+
+    .zahalna-otsinka-content .first-separator {
+        position: absolute;
+        top: 10%;
+        left: 41%;
+    }
+
+    .zahalna-otsinka-content .third-separator {
+        position: absolute;
+        bottom: 5%;
+        right: 52%;
+    }
+
+    .zahalna-otsinka-col p.zahalna-otsinka-col-title {
+        font-size: 10px;
+    }
+
+    .zahalna-otsinka-col {
+        grid-column: span 1;
+        justify-self: center;
+        padding: 0 15px;
+    }
+
+    .separator-bar.last-child-separator {
+        display: block !important;
+        position: absolute;
+        top: 33%;
+        left: 20%;
+        transform: rotate(90deg);
+    }
+
+    .finance-dashboard {
+        width: 100%;
+    }
+
+    .finance-dashboard .detail-paragraph {
+        width: 100% !important;
+        padding: 30px 44px 26px 44px;
+        text-align: center;
+    }
+
+    .detail-container {
+        width: 100% !important;
+        padding: auto 16px !important;
+        margin: auto 0 !important;
+    }
+
+    .detail-metodolya {
+        right: 19px;
+    }
+
+    .detail-description {
+        width: 100% !important;
+        padding: 0 16px;
+    }
+
+    .detail-description span.text-description {
+        width: 100% !important;
+    }
+
+    .detail-container .row .title.detail-header-paragraph {
+        width: 100% !important;
+        margin: auto 0 !important;
+    }
+
+    .detail-container .detail-otsinka-sum-content {
+        display: block;
+    }
+
+    .detail-category-graphic-content {
+        display: block;
+        padding: 0 16px;
+        position: relative;
+    }
+
+
+    .detail-category-graphic-content .category-container {
+        margin-bottom: 27px !important;
+    }
+
+    .category-container p {
+        padding-right: 0 !important;
+    }
+
+    .detail-category-graphic-content .detail-znachymist-otsinka-content {
+        position: absolute;
+        right: 45px;
+        top: 0;
+    }
+
+    .detail-container .detail-otsinka-sum-content .divisor-bar {
+        display: none;
+    }
+}
+
+@media (min-width : 470px) {
+    .zahalna-otsinka-content .first-separator {
+        position: absolute;
+        top: 10%;
+        left: 44%;
+    }
+
+}
